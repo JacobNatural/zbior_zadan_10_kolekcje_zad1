@@ -3,10 +3,6 @@ package zad1;
 import zad1.client.Client;
 import zad1.product.Product;
 import zad1.transfer.TransferFromTxt;
-
-import java.math.BigDecimal;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.*;
 
 public class Shopping {
@@ -18,8 +14,11 @@ public class Shopping {
     public static Shopping fromTxt(List<String> nameTxtList, String regex){
 
         var fromTxt = new TransferFromTxt(nameTxtList);
+
         return new Shopping(fromTxt.getDataFromTxt(regex));
     }
+
+
 
 
 
@@ -28,12 +27,8 @@ public class Shopping {
         var sj = new StringJoiner("\n");
         shops.entrySet()
                 .forEach(map -> sj.add(map.toString()));
-
         return sj.toString();
     }
-
-    // client -> (product, amount) (product, amount)
-
 
 
 }

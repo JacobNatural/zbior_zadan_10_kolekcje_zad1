@@ -1,6 +1,4 @@
 package zad1.transfer;
-
-import zad1.Shopping;
 import zad1.client.Client;
 import zad1.product.Product;
 
