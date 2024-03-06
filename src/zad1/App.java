@@ -12,5 +12,8 @@ public class App {
                 "\\[([a-zA-Z_]+;[a-zA-Z_]+;[1-9][0-9]* )" +
                 "*[a-zA-Z_]+;[a-zA-Z_]+;[1-9][0-9]*\\]");
         System.out.println(shop);
+        System.out.println("----------------------------------");
+        System.out.println("Client with higher bill");
+        System.out.println(shop.getClientHigherBill());
     }
 }
